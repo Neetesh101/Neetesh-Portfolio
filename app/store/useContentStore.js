@@ -16,17 +16,17 @@ export const useContentStore = create(() => ({
 
   hero: {
     heroGreeting: "Hi, I am",
-    heroName: "Ayush Jaiswal",
-    heroTitle: "Front-end Developer • UI Developer",
-    seoDescription:"Ayush Jaiswal is a Senior Frontend Developer with 6+ years of experience specializing in React.js, Next.js, TypeScript, and scalable, high-performance web applications."
+    heroName: "Ayush Jaiswal - Full-Stack AI Engineer",
+    heroTitle: "MERN Developer • Adobe Workfront Fusion",
+    seoDescription:"Ayush Jaiswal is a Full Stack AI Engineer with 6 years of experience in React.js, Node.js, Mongo, Express, Adobe Workfront Fusion, and AI-driven application development.
   },
 
   highlight: {
     aboutTitle: "Professional Summary",
     aboutDescriptionShort:
-      "Senior Software Engineer with 6 years of experience in React.js, JavaScript, and related web development technologies.",
+      "Full Stack AI Engineer with 6 years of experience in React.js, Node.js, Adobe Workfront Fusion, and AI-driven application development.",
     aboutDescriptionLong:
-      "Senior Software Engineer with 6 years of experience crafting high-performance React.js and Next.js applications, specializing in automation, UI engineering, and scalable frontend systems. I’ve built enterprise solutions for Adobe, PwC, and government platforms, improving workflows by up to 40% and enhancing user engagement through optimized UIs, API-driven architectures, and reusable components. Passionate about delivering clean, maintainable, and impactful digital experiences.",
+      "Full Stack AI Engineer with 6+ years of experience building scalable React.js and Node.js applications, with hands-on work in Generative AI and workflow automation. Experienced in developing AI-driven systems, API orchestration, and high-performance enterprise applications. Proven track record of improving workflows and reducing manual effort through automation and AI integrations.",
   },
 
   buttons: {
@@ -136,7 +136,7 @@ export const useContentStore = create(() => ({
       { id: 2, label: "JavaScript", icon: "/skills/JavaScript.svg" },
       { id: 3, label: "React", icon: "/skills/React.svg" },
       { id: 4, label: "Next.js", icon: "/skills/next.svg" },
-      { id: 5, label: "Git", icon: "/skills/Git.svg" },
+      { id: 5, label: "Git", icon: "/skills/Node.js.svg"" },
       {
         id: 6,
         label: "VS Code",
