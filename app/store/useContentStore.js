@@ -136,7 +136,7 @@ export const useContentStore = create(() => ({
       { id: 2, label: "JavaScript", icon: "/skills/JavaScript.svg" },
       { id: 3, label: "React", icon: "/skills/React.svg" },
       { id: 4, label: "Next.js", icon: "/skills/next.svg" },
-      { id: 5, label: "Git", icon: "/skills/Node.js.svg"" },
+      { id: 5, label: "Node.js", icon: "/skills/Node.js.svg" },
       {
         id: 6,
         label: "VS Code",
