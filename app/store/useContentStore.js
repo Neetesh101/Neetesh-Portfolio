@@ -16,7 +16,7 @@ export const useContentStore = create(() => ({
 
   hero: {
     heroGreeting: "Hi, I am",
-    heroName: "Ayush Jaiswal - Full-Stack AI Engineer",
+    heroName: "Ayush Jaiswal - Full Stack AI Engineer",
     heroTitle: "MERN Developer • Adobe Workfront Fusion",
     seoDescription:"Ayush Jaiswal is a Full Stack AI Engineer with 6 years of experience in React.js, Node.js, Mongo, Express, Adobe Workfront Fusion, and AI-driven application development."
   },
