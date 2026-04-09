@@ -107,7 +107,7 @@ export default function Hero() {
             itemProp="name"
             className="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-black dark:text-white"
           >
-            {heroData.heroName} – Senior Frontend Developer
+            {heroData.heroName}
           </h1>
 
           <h2
