@@ -1,5 +1,5 @@
-import Header from "@/app/components/Header";
-import ProjectsPageContent from "@/app/components/Projects/page";
+import Header from "../components/Header";
+import ProjectsPageContent from "../components/Projects/page";
 
 export default function ProjectsRoute() {
   return (
