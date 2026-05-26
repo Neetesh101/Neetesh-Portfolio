@@ -55,7 +55,7 @@ export default function AboutHighlight() {
                   fontSize="110" fontWeight="700"
                   fill="currentColor"
                 >
-                  AJ
+                  NK
                 </text>
               </svg>
             </div>
@@ -81,7 +81,7 @@ export default function AboutHighlight() {
               fontSize="110" fontWeight="700"
               fill="currentColor"
             >
-              AJ
+              Nk
             </text>
           </svg>
         </div>

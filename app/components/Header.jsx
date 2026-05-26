@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { FiSun, FiMoon } from "react-icons/fi";
 import useTheme from "../hooks/usetheme";
@@ -8,7 +8,16 @@ import { useContentStore } from "../store/useContentStore";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
+
+  // Fix hydration mismatch
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
   const { theme, setTheme } = useTheme();
+
   const headerData = useContentStore((s) => s.header);
 
   return (
@@ -22,6 +31,8 @@ export default function Header() {
         "
       >
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+          
+          {/* Logo */}
           <Link
             href="/"
             className="
@@ -32,7 +43,9 @@ export default function Header() {
             {headerData.logoText}
           </Link>
 
+          {/* Desktop Menu */}
           <nav className="hidden md:flex items-center gap-8 text-sm font-medium">
+            
             <button
               onClick={() => window.location.assign("/#about")}
               className="text-white dark:text-black hover:opacity-70 transition"
@@ -54,17 +67,22 @@ export default function Header() {
               {headerData.projects}
             </Link>
 
+            {/* Theme Toggle */}
             <button
-              onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+              onClick={() =>
+                setTheme(theme === "light" ? "dark" : "light")
+              }
               className="
                 p-2 rounded-full transition
                 bg-white text-black
                 dark:bg-black dark:text-white
               "
             >
-              {theme === "light" ? <FiMoon /> : <FiSun />}
+              {mounted &&
+                (theme === "light" ? <FiMoon /> : <FiSun />)}
             </button>
 
+            {/* Contact Button */}
             <Link
               href="/contact"
               className="
@@ -77,6 +95,7 @@ export default function Header() {
             </Link>
           </nav>
 
+          {/* Mobile Hamburger */}
           <button
             className="md:hidden flex flex-col justify-center gap-[6px]"
             onClick={() => setOpen(!open)}
@@ -86,11 +105,13 @@ export default function Header() {
                 open ? "rotate-45 translate-y-2" : ""
               }`}
             />
+
             <span
               className={`block h-[3px] w-7 bg-current transition ${
                 open ? "opacity-0" : ""
               }`}
             />
+
             <span
               className={`block h-[3px] w-7 bg-current transition ${
                 open ? "-rotate-45 -translate-y-2" : ""
@@ -100,6 +121,7 @@ export default function Header() {
         </div>
       </header>
 
+      {/* Overlay */}
       {open && (
         <div
           className="fixed inset-0 bg-black/40 backdrop-blur-sm z-40"
@@ -107,6 +129,7 @@ export default function Header() {
         />
       )}
 
+      {/* Mobile Sidebar */}
       <aside
         className={`
           fixed top-0 right-0 h-full w-64 z-50 shadow-xl
@@ -117,14 +140,21 @@ export default function Header() {
           dark:bg-white dark:text-black
         `}
       >
+        {/* Sidebar Header */}
         <div className="px-6 py-5 border-b border-gray-700 dark:border-gray-300 flex justify-between items-center">
           <span className="text-lg font-semibold">Menu</span>
-          <button className="text-xl" onClick={() => setOpen(false)}>
+
+          <button
+            className="text-xl"
+            onClick={() => setOpen(false)}
+          >
             ✕
           </button>
         </div>
 
+        {/* Mobile Nav */}
         <nav className="flex flex-col gap-6 px-6 mt-6 text-lg">
+
           <button
             onClick={() => {
               window.location.assign("/#about");
@@ -153,17 +183,26 @@ export default function Header() {
             {headerData.projects}
           </Link>
 
+          {/* Mobile Theme Toggle */}
           <button
             onClick={() => {
               setTheme(theme === "light" ? "dark" : "light");
               setOpen(false);
             }}
-            className="block text-left w-full px-4 py-2 rounded-full flex items-center gap-2
-               bg-white text-black dark:bg-black dark:text-white transition"
+            className="
+              block text-left w-full px-4 py-2 rounded-full
+              flex items-center gap-2 transition
+              bg-white text-black
+              dark:bg-black dark:text-white
+            "
           >
-            {theme === "light" ? <FiMoon /> : <FiSun />} Toggle Theme
+            {mounted &&
+              (theme === "light" ? <FiMoon /> : <FiSun />)}
+
+            Toggle Theme
           </button>
 
+          {/* Contact */}
           <Link
             href="/contact"
             onClick={() => setOpen(false)}

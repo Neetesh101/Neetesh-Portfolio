@@ -6,23 +6,23 @@ import Footer from "./components/Footer";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Ayush Jaiswal | Senior Frontend Developer | React & Next.js",
+  title: "Neetesh Katiyar|  Frontend Developer | React & Next.js",
   description:
-    "Ayush Jaiswal is a Senior Frontend Developer with 6+ years of experience in React.js, Next.js, TypeScript, and building scalable UI systems.",
+    "Neetesh Katiyar is a  Frontend Developer with 2+ years of experience in React.js, Next.js, TypeScript, and building scalable UI systems.",
   keywords: [
-    "Ayush Jaiswal",
-    "Ayush Jaiswal Frontend Developer",
-    "Ayush Jaiswal React Developer",
-    "Ayush Jaiswal Next.js",
-    "Ayush Jaiswal Portfolio",
-    "Ayush Jaiswal UI Engineer",
-    "Ayush Jaiswal JavaScript Developer",
-    "Ayush Jaiswal TypeScript",
-    "Ayush Jaiswal Web Developer",
+    "Neetesh Katiyar",
+    "Neetesh Katiyar Frontend Developer",
+    "Neetesh Katiyar React Developer",
+    "Neetesh Katiyar Next.js",
+    "Neetesh Katiyar Portfolio",
+    "Neetesh Katiyar UI Engineer",
+    "Neetesh Katiyar JavaScript Developer",
+    "Neetesh Katiyar TypeScript",
+    "Neetesh Katiyar Web Developer",
     "Frontend Developer",
   ],
-  authors: [{ name: "Ayush Jaiswal" }],
-  creator: "Ayush Jaiswal",
+  authors: [{ name: "Neetesh Katiyar" }],
+  creator: "Neetesh Katiyar",
   metadataBase: new URL("https://ayushjaiswal.vercel.app"),
   robots: {
     index: true,
@@ -36,8 +36,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className="bg-white dark:bg-black transition-colors">
+    <html lang="en" suppressHydrationWarning>
+      <body
+  suppressHydrationWarning
+  className="bg-white dark:bg-black transition-colors">
 
         <script
           type="application/ld+json"
@@ -45,13 +47,13 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Person",
-              name: "Ayush Jaiswal",
+              name: "Neetesh Katiyar",
               url: "https://ayushjaiswal.vercel.app",
-              jobTitle: "Senior Frontend Developer",
+              jobTitle: " Frontend Developer",
               sameAs: [
-                "https://www.linkedin.com/in/ayush-jais/",
-                "https://github.com/ayush42837272-eng",
-                "https://leetcode.com/u/Ayush622/",
+                "https://www.linkedin.com/in/neeteshkatiyar/",
+                "https://github.com/Neetesh101/NetflixGpt",
+                "https://leetcode.com/u/Neetesh1996/",
               ],
               knowsAbout: [
                 "React.js",
@@ -76,14 +78,14 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "WebSite",
-              name: "Ayush Jaiswal Portfolio",
+              name: "Neetesh Katiyar Portfolio",
               url: "https://ayushjaiswal.vercel.app",
               description:
-                "Official portfolio website of Ayush Jaiswal, Senior Frontend Developer specializing in React.js, Next.js, and scalable web applications.",
+                "Official portfolio website of Neetesh Katiyar,  Frontend Developer specializing in React.js, Next.js, and scalable web applications.",
               inLanguage: "en",
               author: {
                 "@type": "Person",
-                name: "Ayush Jaiswal",
+                name: "Neetesh Katiyar",
               },
             }),
           }}

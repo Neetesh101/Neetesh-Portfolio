@@ -2,120 +2,118 @@ import { create } from "zustand";
 
 export const useContentStore = create(() => ({
   header: {
-    logoText: "AJ",
-    about: "About",
-    skills: "Skills",
-    projects: "Projects",
-    contactButton: "Contact Me",
-    navLinks: [
-      { label: "About", href: "#about" },
-      { label: "Skills", href: "#skills" },
-      { label: "Projects", href: "#projects" },
-    ],
-  },
+  logoText: "NK",
+  about: "About",
+  skills: "Skills",
+  projects: "Projects",
+  contactButton: "Contact Me",
+  navLinks: [
+    { label: "About", href: "#about" },
+    { label: "Skills", href: "#skills" },
+    { label: "Projects", href: "#projects" },
+  ],
+},
 
-  hero: {
-    heroGreeting: "Hi, I am",
-    heroName: "Ayush Jaiswal - Full Stack AI Engineer",
-    heroTitle: "MERN Developer • Adobe Workfront Fusion",
-    seoDescription:"Ayush Jaiswal is a Full Stack AI Engineer with 6 years of experience in React.js, Node.js, Mongo, Express, Adobe Workfront Fusion, and AI-driven application development."
-  },
+ hero: {
+  heroGreeting: "Hi, I am",
+  heroName: "Neetesh Katiyar",
+  heroTitle: "Frontend Engineer • React.js • Next.js • TypeScript",
+  seoDescription:
+    "Neetesh Katiyar is a Frontend Engineer with 2.5+ years of experience in React.js, Next.js, TypeScript, Redux Toolkit, API Integration, and scalable admin dashboard development.",
+},
 
-  highlight: {
-    aboutTitle: "Professional Summary",
-    aboutDescriptionShort:
-      "Full Stack AI Engineer with 6 years of experience in React.js, Node.js, Adobe Workfront Fusion, and AI-driven application development.",
-    aboutDescriptionLong:
-      "Full Stack AI Engineer with 6+ years of experience building scalable React.js and Node.js applications, with hands-on work in Generative AI and workflow automation. Experienced in developing AI-driven systems, API orchestration, and high-performance enterprise applications. Proven track record of improving workflows and reducing manual effort through automation and AI integrations.",
-  },
+highlight: {
+  aboutTitle: "Professional Summary",
+  aboutDescriptionShort:
+    "Frontend Engineer with 2.5+ years of experience building scalable service platforms and admin dashboards using React.js, Next.js, and TypeScript.",
+
+  aboutDescriptionLong:
+    "Results-driven Frontend Engineer with 2.5+ years of experience developing production-grade web applications, admin dashboards, and scalable frontend architectures. Skilled in React.js, Next.js, TypeScript, Redux Toolkit, API integration, and performance optimization. Experienced in building reusable component systems, integrating third-party APIs, and improving user experience through optimized frontend engineering practices.",
+},
 
   buttons: {
     readMore: "Read More",
     readLess: "Read Less",
   },
 
-  watermarkWord: "AJ",
+  watermarkWord: "NK",
 
-  socialLinks: [
+socialLinks: [
+  {
+    id: "linkedin",
+    label: "LinkedIn",
+    href: "https://linkedin.com/in/neeteshkatiyar",
+    icon: "/social/linkedin.svg",
+  },
+  {
+    id: "github",
+    label: "GitHub",
+    href: "https://github.com/Neetesh101",
+    icon: "/social/github.svg",
+  },
+  {
+    id: "leetcode",
+    label: "LeetCode",
+    href: "https://leetcode.com/u/Ankyy1996/",
+    icon: "/social/leetcode.svg",
+  },
+  {
+    id: "mail",
+    label: "Email",
+    href: "mailto:neeteshkatiyar101@gmail.com",
+    icon: "/social/email.svg",
+  },
+],
+
+ about: {
+  title: "ABOUT ME",
+  subtitle:
+    "Passionate about building scalable, high-performance frontend applications and modern user experiences.",
+
+  sections: [
     {
-      id: "linkedin",
-      label: "LinkedIn",
-      href: "https://www.linkedin.com/in/ayush-jais/",
-      icon: "/social/linkedin.svg",
+      id: 1,
+      heading: "Frontend Engineering",
+      description:
+        "Building scalable and production-grade web applications using React.js, Next.js, and TypeScript.",
+      icons: "/about/coding.png",
     },
+
     {
-      id: "github",
-      label: "GitHub",
-      href: "https://github.com/ayush6222",
-      icon: "/social/github.svg",
+      id: 2,
+      heading: "Reusable Architecture",
+      description:
+        "Designing reusable UI components, scalable frontend structures, and maintainable application workflows.",
+      icons: "/about/development.png",
     },
+
     {
-      id: "leetcode",
-      label: "LeetCode",
-      href: "https://leetcode.com/u/Ayush622/",
-      icon: "/social/leetcode.svg",
-    },
-    {
-      id: "download",
-      label: "Resume",
-      href: "https://drive.google.com/drive/folders/1ZaudOS-4Gtb2zmYHY3wEMMal0GS8o6I7?usp=drive_link",
-      icon: "/social/download.svg",
-    },
-    {
-      id: "mail",
-      label: "Email",
-      href: "mailto:ayush42837272@gmail.com",
-      icon: "/social/email.svg",
+      id: 3,
+      heading: "Performance Optimization",
+      description:
+        "Optimizing frontend performance using lazy loading, code splitting, efficient rendering, and API handling.",
+      icons: "/about/UI.png",
     },
   ],
-
-  about: {
-    title: "ABOUT ME",
-    subtitle:
-      "Passionate about crafting modern, user-friendly web experiences.",
-    sections: [
-      {
-        id: 1,
-        heading: "UI / UX Engineering",
-        description:
-          "I craft intuitive, user-focused interfaces with clean layouts, accessibility standards, and modern design principles.",
-        icons: "/about/UI.png",
-      },
-      {
-        id: 2,
-        heading: "Frontend Development",
-        description:
-          "I build high-performance, scalable web applications using React.js, JavaScript, and modern frontend tooling.",
-        icons: "/about/coding.png",
-      },
-      {
-        id: 3,
-        heading: "System Enhancement & Optimization",
-        description:
-          "I optimize existing systems through performance tuning, reusable architecture, and engineering best practices.",
-        icons: "/about/development.png",
-      },
-    ],
-  },
+},
   skills: {
-    usingNow: [
-      { id: 1, label: "HTML5", icon: "/skills/HTML5.svg" },
-      { id: 2, label: "CSS3", icon: "/skills/CSS3.svg" },
-      { id: 3, label: "Sass", icon: "/skills/Sass.svg" },
-      { id: 4, label: "JavaScript", icon: "/skills/JavaScript.svg" },
-      { id: 5, label: "React", icon: "/skills/React.svg" },
-      { id: 6, label: "Redux", icon: "/skills/Redux.svg" },
-      { id: 7, label: "Git", icon: "/skills/Git.svg" },
-      { id: 8, label: "Tailwind CSS", icon: "/skills/Tailwind CSS.svg" },
-    ],
-
-    learning: [
-      { id: 9, label: "Node.js", icon: "/skills/Node.js.svg" },
-      { id: 10, label: "AWS", icon: "/skills/aws.svg" },
-      { id: 11, label: "MongoDB", icon: "/skills/MongoDB.svg" },
-      { id: 12, label: "MySQL", icon: "/skills/MySQL.svg" },
-      { id: 13, label: "TypeScript", icon: "/skills/TypeScript.svg" },
-    ],
+   usingNow: [
+  { id: 1, label: "HTML5", icon: "/skills/HTML5.svg" },
+  { id: 2, label: "CSS3", icon: "/skills/CSS3.svg" },
+  { id: 3, label: "JavaScript", icon: "/skills/JavaScript.svg" },
+  { id: 4, label: "TypeScript", icon: "/skills/TypeScript.svg" },
+  { id: 5, label: "React.js", icon: "/skills/React.svg" },
+  { id: 6, label: "Next.js", icon: "/skills/next.svg" },
+  { id: 7, label: "Redux Toolkit", icon: "/skills/Redux.svg" },
+  { id: 8, label: "Tailwind CSS", icon: "/skills/Tailwind CSS.svg" },
+],
+     learning: [
+  { id: 9, label: "Node.js", icon: "/skills/Node.js.svg" },
+  { id: 10, label: "Express.js", icon: "/skills/Node.js.svg" },
+  { id: 11, label: "MongoDB", icon: "/skills/MongoDB.svg" },
+  { id: 12, label: "REST APIs", icon: "/skills/api.svg" },
+  { id: 13, label: "Shadcn/UI", icon: "/skills/shadcn.svg" },
+],
 
     otherSkills: [
       { id: 14, label: "Next.js", icon: "/skills/next.svg" },
@@ -145,132 +143,41 @@ export const useContentStore = create(() => ({
     ]
   },
   projects: [
-    {
-      id: 1,
-      name: "Adobe Automation",
-      description:
-        "Developed an automated content-production pipeline integrating Workfront Fusion with Photoshop, Firefly, Frame.io, and Dropbox. The system generated design assets, applied metadata rules, and triggered workflows without manual intervention. Built modular automation steps that improved consistency and eliminated repetitive design tasks.",
-      tech: [
-        "React.js",
-        "JavaScript",
-        "Workfront Fusion",
-        "Custom Models",
-        "Firefly API",
-        "Photoshop API",
-      ],
-      mainImage: "/Projects/Adobe/main.png",
-      logo: "/Projects/Adobe/logo.png",
-      images: [
-        { id: 1, url: "/Projects/Adobe/1.png" },
-        { id: 2, url: "/Projects/Adobe/2.png" },
-        { id: 3, url: "/Projects/Adobe/3.png" },
-        { id: 4, url: "/Projects/Adobe/4.png" },
-        { id: 5, url: "/Projects/Adobe/5.png" },
-        { id: 6, url: "/Projects/Adobe/6.png" },
-        { id: 7, url: "/Projects/Adobe/7.png" },
-      ],
-      github: "",
-      liveLink: "",
-    },
+  {
+  id: 1,
+  name: "BBP Platform",
+  description:
+    "Architected core modules of a scalable service platform connecting users with nearby professionals. Built reusable UI systems and optimized API-driven workflows using Redux Toolkit.",
+  
+  tech: [
+    "React.js",
+    "Next.js",
+    "Redux Toolkit",
+    "Tailwind CSS",
+    "REST APIs",
+  ],
+
+  github: "",
+  liveLink: "https://www.bbp.app/",
+},
 
     {
-      id: 2,
-      name: "RedBull Mobile - Oman",
-      description:
-        "Developed a mobile-first KYC verification system with barcode scanning, image uploads, live GPS capture, and real-time backend validation. Engineered secure flows for field agents and built intuitive UI screens enabling faster onboarding.",
-      tech: [
-        "Next.js",
-        "TypeScript",
-        "Framer Motion",
-        "HTML/CSS",
-        "REST APIs",
-        "Tailwind CSS",
-        "Internationalization",
-        "Webpack",
-      ],
-      mainImage: "/Projects/RedBull/main.png",
-      logo: "/Projects/RedBull/logo.png",
-      images: [
-        { id: 1, url: "/Projects/RedBull/1.png" },
-        { id: 2, url: "/Projects/RedBull/2.png" },
-        { id: 3, url: "/Projects/RedBull/3.png" },
-        { id: 5, url: "/Projects/RedBull/5.png" },
-      ],
-      liveLink: "https://www.redbullmobile.om/en",
-    },
-    {
-      id: 3,
-      name: "Bharat Mandapam",
-      description:
-        "Designed a hall booking and event workflow system with modules for approvals, officer assignments, event categorization, dynamic tables, and reporting. Improved system UX through reusable Angular components and structured UI layouts.",
-      tech: ["AngularJS", "JavaScript", "HTML/CSS", "REST APIs", "Bootstrap"],
-      mainImage: "/Projects/BharatMandapam/main.png",
-      logo: "/Projects/BharatMandapam/logo.jpeg",
-      images: [
-        { id: 1, url: "/Projects/BharatMandapam/1.png" },
-        { id: 2, url: "/Projects/BharatMandapam/2.png" },
-        { id: 3, url: "/Projects/BharatMandapam/3.png" },
-        { id: 4, url: "/Projects/BharatMandapam/4.png" },
-        { id: 5, url: "/Projects/BharatMandapam/5.png" },
-      ],
-      liveLink: "https://booking.indiatradefair.com/",
-    },
-    {
-      id: 4,
-      name: "iBaseT B2B Portal",
-      description:
-        "Built enterprise B2B dashboard components including dynamic charts, analytics widgets, and multi-step forms. Revamped the legacy UI to modern standards and improved performance using optimized rendering and a reusable architecture.",
-      tech: [
-        "React.js",
-        "JavaScript",
-        "Chart.js",
-        "HTML/CSS",
-        "REST APIs",
-        "Redux",
-        "Grommet",
-        "Middleware Saga",
-        "Webpack",
-        "Lerna",
-      ],
-      mainImage: "/Projects/iBaseT/main.png",
-      logo: "/Projects/iBaseT/logo.jpg",
-      images: [
-        { id: 1, url: "/Projects/iBaseT/1.jpg" },
-        { id: 2, url: "/Projects/iBaseT/2.jpg" },
-        { id: 3, url: "/Projects/iBaseT/3.jpg" },
-        { id: 4, url: "/Projects/iBaseT/4.jpg" },
-        { id: 5, url: "/Projects/iBaseT/5.jpg" },
-        { id: 6, url: "/Projects/iBaseT/6.jpg" },
-        { id: 7, url: "/Projects/iBaseT/7.jpg" },
-        { id: 8, url: "/Projects/iBaseT/8.jpg" },
-        { id: 9, url: "/Projects/iBaseT/9.jpg" },
-      ],
-    },
-    {
-      id: 5,
-      name: "Umang",
-      description:
-        "Contributed to India’s national government platform by implementing new service modules, improving UI flows, and enhancing responsive design. Worked on integrating service APIs and improving user navigation across critical modules.",
-      tech: [
-        "React.js",
-        "JavaScript",
-        "HTML/CSS",
-        "REST APIs",
-        "Bootstrap",
-        "Redux",
-      ],
-      mainImage: "/Projects/Umang/main.png",
-      logo: "/Projects/Umang/logo.jpg",
-      images: [
-        { id: 1, url: "/Projects/Umang/1.png" },
-        { id: 2, url: "/Projects/Umang/2.png" },
-        { id: 3, url: "/Projects/Umang/3.png" },
-        { id: 4, url: "/Projects/Umang/4.png" },
-        { id: 5, url: "/Projects/Umang/5.png" },
-        { id: 6, url: "/Projects/Umang/6.png" },
-      ],
-      liveLink: "https://web.umang.gov.in/landing/",
-    },
+  id: 2,
+  name: "BigSports Admin Dashboard",
+
+  description:
+    "Built and maintained a production-level admin dashboard for managing turf schedules, cancellations, payment workflows, and operational tracking.",
+
+  tech: [
+    "React.js",
+    "Next.js",
+    "TypeScript",
+    "Tailwind CSS",
+    "REST APIs",
+  ],
+
+  liveLink: "https://admin.bigsports.com.ar/",
+},
     {
       id: 6,
       name: "Portfolio Website",

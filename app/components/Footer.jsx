@@ -59,7 +59,7 @@ export default function Footer() {
       </div>
 
       <p className="text-xs mt-3 tracking-wide text-gray-400 dark:text-gray-600">
-        © {new Date().getFullYear()} Ayush Jaiswal — All Rights Reserved.
+        © {new Date().getFullYear()} Neetesh Katiyar — All Rights Reserved.
       </p>
     </motion.footer>
   );
