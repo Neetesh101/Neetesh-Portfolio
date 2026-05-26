@@ -79,7 +79,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "WebSite",
               name: "Neetesh Katiyar Portfolio",
-              url: "https://ayushjaiswal.vercel.app",
+              // url: "https://ayushjaiswal.vercel.app",
               description:
                 "Official portfolio website of Neetesh Katiyar,  Frontend Developer specializing in React.js, Next.js, and scalable web applications.",
               inLanguage: "en",
